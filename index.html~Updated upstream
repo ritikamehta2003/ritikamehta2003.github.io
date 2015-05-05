@@ -112,7 +112,7 @@
 						<div class="4u$ 12u$(medium)">
 							<span class= src="images/pic04.jpg" alt="" /></span><iframe width="400" height="315" src="https://www.youtube.com/embed/VxThhSsSjGM" frameborder="0" allowfullscreen></iframe>
 							<h3>The chicken or the egg?</h3>
-							<p>All time favourite question will now be put to an end through youtuber nigahiga... WHAT CAME FIRST THE CHICKEN OR THE EGG??</p> 
+							<p>All time favourite question will now be put to an end through youtuber nigahiga... WHAT CAME FIRST THE CHICKEN OR THE EGG??</p>
 							<ul class="actions">
 								<li><a href="#" class="button">More</a></li>
 							</ul>
@@ -130,9 +130,8 @@
 					<p>I need to fix this peeps</p>
 					<ul class="actions uniform">
 						<li><a href="#" class="button special">Choose and explore</a></li> 
-						<li><a href="page2.html" class="button special">Creativity</a></li>
+						<li><a href="#" class="button">Creativity</a></li>
 					</ul>
-
 				</div>
 			</section>
 

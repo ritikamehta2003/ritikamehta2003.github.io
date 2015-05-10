@@ -1,4 +1,15 @@
 body {
 	background-image: url("images.jpg");
-	color:white;
+	color:rgb(255, 117, 209);
+}
+h1{
+	color: yellow;
+}
+h2 {
+	color: yellow;
+}
+
+p{
+	border-style:outset;
+	border-color: red
 }

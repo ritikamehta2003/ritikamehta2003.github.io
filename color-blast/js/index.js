@@ -21,16 +21,16 @@ var Game = {
 		this.enemyIndex = 0;
 		this.particleIndex = 0;
 		this.maxParticles = 10;
-		this.maxEnemies = 6;
+		this.maxEnemies = 8;
 		this.enemiesAlive = 0;
 		this.currentFrame = 0;
-		this.maxLives = 3;
+		this.maxLives = 50;
 		this.life = 0;
 		this.binding();
 		this.player = new Player();
 		this.score = 0;
 		this.paused = false;
-		this.shooting = false;
+		this.shooting = true;
 		this.oneShot = false;
 		this.isGameOver = false;
      this.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame;
@@ -179,7 +179,7 @@ var Game = {
 				Game.bullets[z].update();
 			}
 			if(Game.player.invincible){
-				if(Game.currentFrame % 20 === 0){
+				if(Game.currentFrame % 1 === 0){
 					Game.player.draw();
 				}
 			} else {
@@ -211,7 +211,7 @@ var Player = function(){
 	this.movingRight = false;
 	this.speed = 8;
 	this.invincible = false;
-	this.color = "white";
+	this.color = "rainbow";
 };
 
 
@@ -270,7 +270,7 @@ var Bullet = function(x){
 	this.vy = 8;
 	this.index = Game.bulletIndex;
 	this.active = true;
-	this.color = "white";
+	this.color = "hsl("+ Game.random(0, 360) +", 60%, 50%)";
 	
 };
 
@@ -305,7 +305,7 @@ var Enemy = function(){
 	this.speed = Game.random(2, 3);
 	this.shootingSpeed = Game.random(30, 80);
 	this.movingLeft = Math.random() < 0.5 ? true : false;
-	this.color = "hsl("+ Game.random(0, 360) +", 60%, 50%)";
+	this.color = "white";
 	
 };
 

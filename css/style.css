@@ -1347,7 +1347,7 @@
 .menu-wrap {
     width:100%;
     box-shadow:0px 1px 3px rgba(0,0,0,0.2);
-    background:#3e3436;
+    background:#0ff;
 }
  
 .menu {
@@ -1363,12 +1363,13 @@
  
 .menu a {
     transition:all linear 0.15s;
-    color:#919191;
+    color:#ffffff;
+    background:#29A3CC
 }
  
 .menu li:hover > a, .menu .current-item > a {
     text-decoration:none;
-    color:#be5b70;
+    color:#cccccc;
 }
  
 .menu .arrow {
@@ -1391,13 +1392,14 @@
 }
  
 .menu > ul > li:hover > a, .menu > ul > .current-item > a {
-    
+    background:#2e2728;
 }
  
 /*----- Bottom Level -----*/
 .menu li:hover .sub-menu {
     z-index:1;
     opacity:1;
+    background: rgba(00, 99, 99, 1);
 }
  
 .sub-menu {
@@ -1424,5 +1426,5 @@
 }
  
 .sub-menu li a:hover, .sub-menu .current-item a {
-    background:#3e3436;
+    background: #002952
 }
